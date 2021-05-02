@@ -109,16 +109,30 @@ body {
   background-color: #f16059;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    background: black;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+#headline {
+    padding: 10px;
+}
+
+.flex-container {
+    /*add display:flex and set justify-content to space-between*/
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.flex-items {
   color: #fff;
   line-height: 1.5em;
   font-size: 1em;
@@ -132,18 +146,20 @@ body {
 }
 
 
-.div-2, .div-3 {
+#div-2, #div-3 {
     border-left-color: #fff;
     border-left-width: .25px;
     border-left-style: solid;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
-.div-1, .div-2 {
-    padding-right: 40px;
+#div-1, #div-2 {
+    padding-right: 30px;
 }
 
-
+svg {
+    fill: #fff;
+}
 
 
 /* ==========================================================================
